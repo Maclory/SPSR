@@ -37,7 +37,7 @@ Commonly used training and testing datasets can be downloaded [here](https://git
 
 ### Preprocess Datasets
 
-We also provide code to preprocess the datasets [here](https://github.com/Maclory/test1/tree/master/preprocess). 
+We also provide code to preprocess the datasets [here](https://github.com/Maclory/SPSR/tree/master/preprocess). 
 
 - After downloading the original datasets, please store them to a specific GT folder. 
 
@@ -54,10 +54,10 @@ To train an SPSR model:
 
 `python train.py -opt options/train/train_spsr.json`
 
-- The json file will be processed by `options/options.py`. Please refer to [this](https://github.com/Maclory/test1/tree/master/code/options/README.md) for more details.
+- The json file will be processed by `options/options.py`. Please refer to [this](https://github.com/Maclory/SPSR/tree/master/code/options/README.md) for more details.
 
 - Before running this code, please modify `train_spsr.json` to your own configurations including: 
-  - the proper `dataroot_HR` and `dataroot_LR` paths for the data loader ([More details](https://github.com/Maclory/test1/tree/master/code/data/README.md))
+  - the proper `dataroot_HR` and `dataroot_LR` paths for the data loader ([More details](https://github.com/Maclory/SPSR/tree/master/code/data/README.md))
   - saving frequency for models and states
   - whether to resume training with `.state` files
   - other hyperparameters
@@ -87,7 +87,7 @@ To generate SR images by an SPSR model:
 
 ## Evaluation Toolbox
 
-We provide a easy and useful [**evaluation toolbox**](https://github.com/Maclory/test1/tree/master/metrics) to simplify the procedure of evaluating SR results. In this toolbox, you can get the [MA](https://github.com/chaoma99/sr-metric), [NIQE](https://github.com/csjunxu/Bovik_NIQE_SPL2013), [PI](https://github.com/roimehrez/PIRM2018), PSNR, SSIM, MSE, RMSE, MAE and [LPIPS](https://github.com/richzhang/PerceptualSimilarity) values of any SR results you want to evaluate. 
+We provide a easy and useful [**evaluation toolbox**](https://github.com/Maclory/SPSR/tree/master/metrics) to simplify the procedure of evaluating SR results. In this toolbox, you can get the [MA](https://github.com/chaoma99/sr-metric), [NIQE](https://github.com/csjunxu/Bovik_NIQE_SPL2013), [PI](https://github.com/roimehrez/PIRM2018), PSNR, SSIM, MSE, RMSE, MAE and [LPIPS](https://github.com/richzhang/PerceptualSimilarity) values of any SR results you want to evaluate. 
 
 ## Results 
 ### Visual Results
