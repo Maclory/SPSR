@@ -122,7 +122,7 @@ PSNR/SSIM comparison with perceptual-driven SR methods.
 | [SRGAN](https://github.com/tensorlayer/srgan) | 29\.168/0\.8613         | 26\.171/0\.7841         | 25\.459/0\.6485         | 28\.575/0\.8541         | 24\.397/0\.9381         |
 | [ESRGAN](https://github.com/xinntao/ESRGAN)   | **30\.454**/**0\.8677** | 26\.276/0\.7783         | 25\.317/0\.6506         | 29\.412/**0\.8546**     | 24\.360/0\.9453         |
 | [NatSR](https://github.com/JWSoh/NatSR)       | **30\.991**/**0\.8800** | **27\.514**/**0\.8140** | **26\.445**/**0\.6831** | **30\.346**/**0\.8721** | **25\.464**/**0\.9505** |
-| SPSR                                          | 30\.400/0\.8627         | **26\.640**/**0\.7930** | **25\.505**/**0\.6576** | **29\.414**/**0\.8537** | **24\.799**/**0\.9481** |
+| SPSR                                          | 30\.400/0\.8627         | **26\.640**/**0\.7930** | **25\.505**/**0\.6576** | **29\.414**/0\.8537 | **24\.799**/**0\.9481** |
 
 ## Acknowledgement
 The code is based on [BasicSR](https://github.com/xinntao/BasicSR), [MA](https://github.com/chaoma99/sr-metric), [NIQE](https://github.com/csjunxu/Bovik_NIQE_SPL2013), [PI](https://github.com/roimehrez/PIRM2018) and [LPIPS](https://github.com/richzhang/PerceptualSimilarity). 
