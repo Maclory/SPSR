@@ -1,0 +1,12 @@
+Pairs:
+  Dataset:
+    - Set5
+    - Set14
+  GTFolder: 
+    - ../data/GT/Set5/HR
+    - ../data/GT/Set14/HR
+  SRFolder:
+    - ../data/SPSR_Paper/Set5
+    - ../data/SPSR_Paper/Set14
+Name: Test
+Echo: True

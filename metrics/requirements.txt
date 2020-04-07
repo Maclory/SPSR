@@ -1,0 +1,14 @@
+certifi
+numpy
+opencv-python
+pandas
+Pillow
+python-dateutil
+pytz
+PyYAML
+six
+torch
+torchvision
+tqdm
+scikit-image
+IPython

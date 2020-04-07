@@ -1,0 +1,93 @@
+{
+  "name": "SPSR"   
+  , "use_tb_logger": true
+  , "model":"spsr"
+  , "scale": 4
+  , "gpu_ids": [0,1]
+
+  , "datasets": {
+    "train": {
+      "name": "DIV2K"
+      , "mode": "LRHR"
+      , "dataroot_HR": "/mnt/4/jzy/dataset/SR_dataset/DIV2K800/DIV2K800_HR.lmdb"
+      , "dataroot_LR": "/mnt/4/jzy/dataset/SR_dataset/DIV2K800/DIV2K800.lmdb"
+      , "subset_file": null
+      , "use_shuffle": true
+      , "n_workers": 16
+      , "batch_size": 30
+      , "HR_size": 128
+      , "use_flip": true
+      , "use_rot": true
+    }
+    , "val": {
+      "name": "Set14"
+      , "mode": "LRHR"
+      , "dataroot_HR": "/mnt/4/jzy/dataset/SR_dataset/Set14/Set14_sub"
+      , "dataroot_LR": "/mnt/4/jzy/dataset/SR_dataset/Set14/Set14_sub_bicLRx4"
+    }
+  }
+
+  , "path": {
+    "root": "/mnt/4/SPSR/cya_sr/cya_BasicSR/release" //modify to you own root path
+    // , "resume_state": "../experiments/SPSR_0311/training_state/25000.state"
+    , "pretrain_model_G": "../experiments/pretrained_models/RRDB_PSNR_x4.pth"
+  }
+
+  , "network_G": {
+    "which_model_G": "spsr_net" 
+    , "norm_type": null
+    , "mode": "CNA"
+    , "nf": 64
+    , "nb": 23
+    , "in_nc": 3
+    , "out_nc": 3
+    , "gc": 32
+    , "group": 1
+  }
+
+  , "network_D": {
+    "which_model_D": "discriminator_vgg_128"
+    , "norm_type": "batch"
+    , "act_type": "leakyrelu"
+    , "mode": "CNA"
+    , "nf": 64
+    , "in_nc": 3
+  }
+
+  , "train": {
+    "lr_G": 1e-4
+    , "lr_G_grad": 1e-4
+    , "weight_decay_G": 0
+    , "weight_decay_G_grad": 0
+    , "beta1_G": 0.9
+    , "beta1_G_grad": 0.9
+    , "lr_D": 1e-4
+    , "weight_decay_D": 0
+    , "beta1_D": 0.9
+    , "lr_scheme": "MultiStepLR"
+    , "lr_steps": [50000, 100000, 200000, 300000]
+    , "lr_gamma": 0.5
+
+    , "pixel_criterion": "l1"
+    , "pixel_weight": 1e-2
+    , "feature_criterion": "l1"
+    , "feature_weight": 1
+    , "gan_type": "vanilla"
+    , "gan_weight": 5e-3
+    , "gradient_pixel_weight": 1e-2
+    , "gradient_gan_weight": 5e-3
+    , "pixel_branch_criterion": "l1"
+    , "pixel_branch_weight": 5e-1
+    , "Branch_pretrain" : 1
+    , "Branch_init_iters" : 5000
+
+    , "manual_seed": 9
+    , "niter": 5e6
+    , "val_freq": 5e3
+  }
+
+  , "logger": {
+    "print_freq": 100
+    , "save_checkpoint_freq": 5e3
+  }
+}

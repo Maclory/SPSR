@@ -1,0 +1,33 @@
+{
+  "name": "SPSR"
+  , "model": "spsr"
+  , "scale": 4
+  , "gpu_ids": [0]
+
+  , "datasets": {
+    "test_1": { 
+      "name": "set5"
+      , "mode": "LR"
+      // , "dataroot_HR": "/mnt/4/jzy/dataset/SR_dataset/test_datasets/Set5/Set5_HR" // needed in "LRHR" mode
+      , "dataroot_LR": "/mnt/4/jzy/dataset/SR_dataset/test_datasets/Set5/Set5_LR"
+    }
+  }
+  , "path": {
+    "root": "/mnt/4/SPSR/release" // change to your own root path
+    //, "resume_state": "../experiments/002_RRDB_ESRGAN_x4_DIV2K/training_state/65000.state"
+    , "pretrain_model_G": "../experiments/pretrain_models/spsr.pth"
+  }
+
+  , "network_G": {
+    "which_model_G": "spsr_net"
+    , "norm_type": null
+    , "mode": "CNA"
+    , "nf": 64
+    , "nb": 23
+    , "in_nc": 3
+    , "out_nc": 3
+
+    , "gc": 32
+    , "group": 1
+  }
+}

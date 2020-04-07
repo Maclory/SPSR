@@ -1,0 +1,8 @@
+certifi
+lmdb
+numpy
+opencv-python
+torch
+torchvision
+tqdm
+wincertstore
