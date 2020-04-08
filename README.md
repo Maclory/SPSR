@@ -83,7 +83,7 @@ To generate SR images by an SPSR model:
 
 - We provide **our SPSR model** used in our paper that can be downloaded in [Google Drive](https://drive.google.com/drive/folders/1c4EbfI6X4KzCiyg1H7TA6rJY-HVgvS3q?usp=sharing) or [Baidu Drive](https://pan.baidu.com/s/1bcDiD07aTUO2THmEXZJaiA) (extraction code muw3). Download `spsr.pth` and put it into `./experiments/pretrain_models`. Then modify the directory of pretrained model in `test_spsr.json` and run `test.py`. 
 
-- You can put you LR images in a certain folder and just change the `dataroot_LR` setting in `test_spsr.json` and run `test.py`. 
+- You can put your own LR images in a certain folder and just change the `dataroot_LR` setting in `test_spsr.json` and run `test.py`. 
 
 ## Evaluation Toolbox
 
