@@ -87,7 +87,7 @@ To generate SR images by an SPSR model:
 
 ## Evaluation Toolbox
 
-We provide a easy and useful [**evaluation toolbox**](https://github.com/Maclory/SPSR/tree/master/metrics) to simplify the procedure of evaluating SR results. In this toolbox, you can get the [MA](https://github.com/chaoma99/sr-metric), [NIQE](https://github.com/csjunxu/Bovik_NIQE_SPL2013), [PI](https://github.com/roimehrez/PIRM2018), PSNR, SSIM, MSE, RMSE, MAE and [LPIPS](https://github.com/richzhang/PerceptualSimilarity) values of any SR results you want to evaluate. 
+We provide a easy and useful [**evaluation toolbox**](https://github.com/Maclory/SPSR/tree/master/metrics) to simplify the procedure of evaluating SR results. In this toolbox, you can get the [MA](https://github.com/chaoma99/sr-metric), [NIQE](https://github.com/csjunxu/Bovik_NIQE_SPL2013), [PI](https://github.com/roimehrez/PIRM2018), PSNR, [SSIM](https://ece.uwaterloo.ca/~z70wang/research/ssim), MSE, RMSE, MAE and [LPIPS](https://github.com/richzhang/PerceptualSimilarity) values of any SR results you want to evaluate. 
 
 ## Results 
 ### Visual Results
@@ -100,7 +100,7 @@ We provide a easy and useful [**evaluation toolbox**](https://github.com/Maclory
 
 ### Quantitative Results
 
-From the below two tables of comparison with perceptual-driven SR methods, we can see our SPSR method is able to obtain the **best [PI](https://github.com/roimehrez/PIRM2018) and [LPIPS](https://github.com/richzhang/PerceptualSimilarity)** performance and **comparable PSNR and SSIM** values simultaneously. The top 2 scores are highlighted.
+From the below two tables of comparison with perceptual-driven SR methods, we can see our SPSR method is able to obtain the **best [PI](https://github.com/roimehrez/PIRM2018) and [LPIPS](https://github.com/richzhang/PerceptualSimilarity)** performance and **comparable PSNR and [SSIM](https://ece.uwaterloo.ca/~z70wang/research/ssim)** values simultaneously. The top 2 scores are highlighted.
 
 PI/LPIPS comparison with perceptual-driven SR methods.
 
@@ -125,7 +125,7 @@ PSNR/SSIM comparison with perceptual-driven SR methods.
 | SPSR                                          | 30\.400/0\.8627         | **26\.640**/**0\.7930** | **25\.505**/**0\.6576** | **29\.414**/0\.8537 | **24\.799**/**0\.9481** |
 
 ## Acknowledgement
-The code is based on [BasicSR](https://github.com/xinntao/BasicSR), [MA](https://github.com/chaoma99/sr-metric), [NIQE](https://github.com/csjunxu/Bovik_NIQE_SPL2013), [PI](https://github.com/roimehrez/PIRM2018) and [LPIPS](https://github.com/richzhang/PerceptualSimilarity). 
+The code is based on [BasicSR](https://github.com/xinntao/BasicSR), [MA](https://github.com/chaoma99/sr-metric), [NIQE](https://github.com/csjunxu/Bovik_NIQE_SPL2013), [PI](https://github.com/roimehrez/PIRM2018), [SSIM](https://ece.uwaterloo.ca/~z70wang/research/ssim) and [LPIPS](https://github.com/richzhang/PerceptualSimilarity). 
 
 ## Contact 
 If you have any questions about our work, please contact <macheng17@mails.tsinghua.edu.cn>
