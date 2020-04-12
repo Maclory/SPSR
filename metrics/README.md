@@ -87,7 +87,7 @@ You can download the PI evaluating model from [Google Drive](https://drive.googl
 
 ## Usage
 
-The scripts will calculate the values of the following evaluation metrics: [`'MA'`](https://github.com/chaoma99/sr-metric), [`'NIQE'`](https://github.com/csjunxu/Bovik_NIQE_SPL2013), [`'PI'`](https://github.com/roimehrez/PIRM2018), `'PSNR'`, `'SSIM'`, `'MSE'`, `'RMSE'`, `'MAE'`, [`'LPIPS'`](https://github.com/richzhang/PerceptualSimilarity).
+The scripts will calculate the values of the following evaluation metrics: [`'MA'`](https://github.com/chaoma99/sr-metric), [`'NIQE'`](https://github.com/csjunxu/Bovik_NIQE_SPL2013), [`'PI'`](https://github.com/roimehrez/PIRM2018), `'PSNR'`, [`'SSIM'`](https://ece.uwaterloo.ca/~z70wang/research/ssim), `'MSE'`, `'RMSE'`, `'MAE'`, [`'LPIPS'`](https://github.com/richzhang/PerceptualSimilarity). Note that the SSIM values are calculated by `ssim.m`, the matlab code including the suggested downsampling process available in this [link](https://ece.uwaterloo.ca/~z70wang/research/ssim). 
 
 ### Configurations
 
@@ -197,4 +197,4 @@ The results will be generated in the `../evaluate/` folder as follows:
 
 ## Reference
 
-The code is based on [MA](https://github.com/chaoma99/sr-metric), [NIQE](https://github.com/csjunxu/Bovik_NIQE_SPL2013), [PI](https://github.com/roimehrez/PIRM2018) and [LPIPS](https://github.com/richzhang/PerceptualSimilarity). 
+The code is based on [MA](https://github.com/chaoma99/sr-metric), [NIQE](https://github.com/csjunxu/Bovik_NIQE_SPL2013), [PI](https://github.com/roimehrez/PIRM2018), [SSIM](https://ece.uwaterloo.ca/~z70wang/research/ssim) and [LPIPS](https://github.com/richzhang/PerceptualSimilarity). 
