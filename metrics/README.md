@@ -83,7 +83,7 @@ pip install -r requirements.txt
 
 ### C. Download the PI Evaluating Model
 
-You can download the PI evaluating model from [Google Drive](https://drive.google.com/open?id=1c4EbfI6X4KzCiyg1H7TA6rJY-HVgvS3q) or [Baidu Drive](https://pan.baidu.com/s/1CYBmT6uPJxK0bh8UgvDkng) (extraction code muw3) and place `model.mat` into `MetricEvaluation/utils/sr-metric`.
+You can download the PI evaluating model from [Google Drive](https://drive.google.com/open?id=1c4EbfI6X4KzCiyg1H7TA6rJY-HVgvS3q) or [Baidu Drive](https://pan.baidu.com/s/1bcDiD07aTUO2THmEXZJaiA) (extraction code muw3) and place `model.mat` into `MetricEvaluation/utils/sr-metric`.
 
 ## Usage
 
