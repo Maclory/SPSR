@@ -87,7 +87,7 @@ To generate SR images by an SPSR model:
 
 ## Evaluation Toolbox
 
-We provide a easy and useful [**evaluation toolbox**](https://github.com/Maclory/SPSR/tree/master/metrics) to simplify the procedure of evaluating SR results. In this toolbox, you can get the [MA](https://github.com/chaoma99/sr-metric), [NIQE](https://github.com/csjunxu/Bovik_NIQE_SPL2013), [PI](https://github.com/roimehrez/PIRM2018), PSNR, [SSIM](https://ece.uwaterloo.ca/~z70wang/research/ssim), MSE, RMSE, MAE and [LPIPS](https://github.com/richzhang/PerceptualSimilarity) values of any SR results you want to evaluate. 
+We provide an easy and useful [**evaluation toolbox**](https://github.com/Maclory/SPSR/tree/master/metrics) to simplify the procedure of evaluating SR results. In this toolbox, you can get the [MA](https://github.com/chaoma99/sr-metric), [NIQE](https://github.com/csjunxu/Bovik_NIQE_SPL2013), [PI](https://github.com/roimehrez/PIRM2018), PSNR, [SSIM](https://ece.uwaterloo.ca/~z70wang/research/ssim), MSE, RMSE, MAE and [LPIPS](https://github.com/richzhang/PerceptualSimilarity) values of any SR results you want to evaluate. 
 
 ## Results 
 ### Visual Results
