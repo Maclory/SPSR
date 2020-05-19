@@ -98,7 +98,7 @@ def define_G(opt, device=None):
     if gpu_ids:
         assert torch.cuda.is_available()
         if device is not None:
-            net = nn.DataParallel(netG.to(device))
+            netG = nn.DataParallel(netG.to(device))
         else:
             netG = nn.DataParallel(netG)
     return netG
