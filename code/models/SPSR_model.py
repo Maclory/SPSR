@@ -234,8 +234,7 @@ class SPSRModel(BaseModel):
         for p in self.netD_grad.parameters():
             p.requires_grad = False
 
-        # for steps less than self.Branch_init_iters, 
-        # update the parameters in Gradient Branch
+
         if(self.Branch_pretrain): 
             if(step < self.Branch_init_iters):
                 for k,v in self.netG.named_parameters():
