@@ -82,7 +82,7 @@
     , "Branch_init_iters" : 5000
 
     , "manual_seed": 9
-    , "niter": 5e6
+    , "niter": 5e5
     , "val_freq": 5e3
   }
 
