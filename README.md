@@ -1,6 +1,6 @@
 # SPSR
 
-PyTorch implementation of Structure-Preserving Super Resolution with Gradient Guidance (CVPR 2020) \[[arXiv](https://arxiv.org/abs/2003.13081)\]
+PyTorch implementation of Structure-Preserving Super Resolution with Gradient Guidance (CVPR 2020) \[[arXiv](https://arxiv.org/abs/2003.13081)\]\[[CVF](http://openaccess.thecvf.com/content_CVPR_2020/html/Ma_Structure-Preserving_Super_Resolution_With_Gradient_Guidance_CVPR_2020_paper.html)\]
 <p align="center">
   <img src="visual_results/fig2.png">
 </p>
