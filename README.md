@@ -1,12 +1,15 @@
 # SPSR
 
 PyTorch implementation of Structure-Preserving Super Resolution with Gradient Guidance (CVPR 2020) \[[arXiv](https://arxiv.org/abs/2003.13081)\]\[[CVF](http://openaccess.thecvf.com/content_CVPR_2020/html/Ma_Structure-Preserving_Super_Resolution_With_Gradient_Guidance_CVPR_2020_paper.html)\]
+Extended version: Structure-Preserving Image Super-Resolution (TPAMI 2021) \[[arXiv](https://arxiv.org/abs/2109.12530)\]
 <p align="center">
   <img src="visual_results/fig2.png">
 </p>
 
 If you find our work useful in your research, please consider citing:
 ```
+@ARTICLE{9546645,  author={Ma, Cheng and Rao, Yongming and Lu, Jiwen and Zhou, Jie},  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},   title={Structure-Preserving Image Super-Resolution},   year={2021},  volume={},  number={},  pages={1-1},  doi={10.1109/TPAMI.2021.3114428}}
+
 @inproceedings{ma2020structure,
   title={Structure-Preserving Super Resolution with Gradient Guidance},
   author={Ma, Cheng and Rao, Yongming and Cheng, Yean and Chen, Ce and Lu, Jiwen and Zhou, Jie},
